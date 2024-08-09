@@ -24,23 +24,30 @@ header {
 }
 
 .img-responsive {
-  max-width: 100%;
+  width: 100%;
 }
 .grid-2-columns {
   grid-template-columns: 1fr 1fr;
 }
 
 .grid-3col-first-small {
-grid-template-columns: 1fr 2fr 2fr;
+  grid-template-columns: 1fr 2fr 2fr;
 }
 
 .grid-three-col {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
+.embed {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
 .card {
- background: white; 
- margin: 30px 0;
+  background: white;
+  margin: 30px 0;
+}
+.card-header.grid {
+  grid-gap: 0;
 }
 .card-body {
   padding: 30px;
@@ -68,7 +75,7 @@ section {
 }
 
 section.secondary {
-background:#f8f8f8
+  background: #f8f8f8;
 }
 
 header h1 {
@@ -130,21 +137,20 @@ main h3 {
   margin: 0;
 }
 
-
 main h4 {
-font-weight: 700;
-font-size: 24px;
-line-height: 1;
-color: #272044;
-margin: 0;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;
+  color: #272044;
+  margin: 0;
 }
 
 main h5 {
-font-weight: 700;
-font-size: 13px;
-line-height: 1;
-color: #272044;
-margin: 0;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 1;
+  color: #272044;
+  margin: 0;
 }
 
 main p {
@@ -218,5 +224,11 @@ footer a {
   }
   section {
     padding: 30px;
+  }
+  .card-header img {
+    display: none;
+  }
+  .embed {
+    aspect-ratio: 16/9;
   }
 }
